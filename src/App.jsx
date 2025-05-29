@@ -20,7 +20,7 @@ function App() {
       const spiltWords = inputText.split(" ");
       for (const words of spiltWords) {
         if (customDictionary[words.toLowerCase()]) {
-          setWord(customDictionary[words]);
+          setWord(customDictionary[words.toLowerCase()]);
           break;
         } else {
           setWord("");
