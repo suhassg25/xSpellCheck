@@ -19,7 +19,7 @@ function App() {
     function finder() {
       const spiltWords = inputText.split(" ");
       for (const words of spiltWords) {
-        if (customDictionary[words]) {
+        if (customDictionary[words.toLowerCase()]) {
           setWord(customDictionary[words]);
           break;
         } else {
